@@ -3,6 +3,7 @@ apt-get install wget
 apt-get install unzip
 apt-get install curl
 
+mkdir PiwikMysql
 mkdir PiwikWww
 
 cd PiwikWww
