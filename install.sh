@@ -6,7 +6,7 @@ apt-get install curl
 mkdir piwik-mysql
 mkdir piwik-www
 
-cd piwik-www
+cd PiwikWww
 wget http://builds.piwik.org/piwik.zip
 unzip piwik.zip
 rm How\ to\ install\ Piwik.html
@@ -20,5 +20,5 @@ chmod +x /usr/local/bin/docker-compose
 docker-compose up -d
 docker-compose ps
 
-rm index.html
+rm PiwikWww/index.html
 echo "Install Complete..."
