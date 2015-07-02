@@ -45,6 +45,30 @@ That will fix the problem but if you want to make sure that when you reboot you 
 
 Once this is done you are going to have to run the install script again. However, just running the script can cause issues so first run ```sh remove.sh``` which is a script for removing what you have just installed. Once that is done you can try installing again and hopefully this time it should work.
 
+# Piwik Installation Screens
+
+The piwik installation screens are pretty straight forward. This is where you set up your database.
+
+There are three things to remember in the database setup form:
+
+**Database Server:**
+To find the database server you will need to run this command on the server: 
+```
+docker exec 9e8b env \| grep PORT_3306_TCP_ADDR \| grep -Pom 1 '[0-9.]{7,15}'
+```
+**Login:**
+```
+root
+```
+**Password:**
+```
+The password you set in the docker-compose.yml file at the begining
+```
+**Database Name**
+```
+Whatever you want to call the database
+```
+
 # Issues
 
 If you have any issues with these scripts report and issue directly on [GitHub](https://github.com/JoeeGrigg/quick-piwik/issues) or contact me [here](mailto:joe@joegrigg.com).
