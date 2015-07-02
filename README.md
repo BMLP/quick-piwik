@@ -17,8 +17,11 @@ This script has been designed to make Piwik installation as easy as possible.
 1. Clone this repo down to a local directory.
 2. Move the contents of this folder to where you want the Piwik root directory to be installed.
 3. Navigate to the folder you have chosen.
-4. Run ```sh install.sh```
-5. At this point Piwik should be live on port 80.
+4. Open ```docker-compose.yml``` and edit line ```6``` where it says ```YouSecurePassword``` with a password of your choosing.
+  It can only use charaters ```a-zA-z0-9```
+5. Save and exit that file.
+6. Run ```sh install.sh```
+7. At this point Piwik should be live on port 80.
 
 Just before the "Installation Complete" message, you will see a table which lists the two containers that should be running. If in the state column you see anything other than "Up" for one of the two new containers then there has been an issue.
 

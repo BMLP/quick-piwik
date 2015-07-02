@@ -3,7 +3,7 @@ PiwikMysql:
   volumes:
     - $PWD/PiwikMysql:/var/lib/mysql
   environment:
-    - MYSQL_ROOT_PASSWORD=password
+    - MYSQL_ROOT_PASSWORD=YourSecurePassword
   ports:
     - "3306:3306"
 PiwikNginx:
