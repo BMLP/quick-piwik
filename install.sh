@@ -3,8 +3,8 @@ apt-get install wget
 apt-get install unzip
 apt-get install curl
 
-mkdir piwik-mysql
-mkdir piwik-www
+mkdir PiwikMysql
+mkdir PiwikWww
 
 cd PiwikWww
 wget http://builds.piwik.org/piwik.zip
