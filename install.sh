@@ -1,6 +1,7 @@
 echo "Install Starting..."
 apt-get install wget
 apt-get install unzip
+apt-get install curl
 
 mkdir piwik-mysql
 mkdir piwik-www
@@ -12,6 +13,9 @@ rm How\ to\ install\ Piwik.html
 rm piwik.zip
 mv piwik/* .
 cd ../
+
+curl -L https://github.com/docker/compose/releases/download/1.3.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
 
 docker-compose up -d
 docker-compose ps
