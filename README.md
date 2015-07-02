@@ -1,4 +1,4 @@
-![Piwik Logo](http://piwik.org/wp-content/themes/piwik/assets/img/media/piwik.png)
+![Quick Piwik Logo](http://oi59.tinypic.com/2a5hces.jpg)
 
 Quick Piwik
 ==========
