@@ -1,3 +1,5 @@
+![Piwik Logo](http://piwik.org/wp-content/themes/piwik/assets/img/media/piwik.png)
+
 Quick Piwik
 ==========
 
