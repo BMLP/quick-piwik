@@ -1,7 +1,7 @@
 PiwikMysql:
   image: mysql
   volumes:
-    - $PWD/PiwikMysql:/var/lib/mysql
+    - /var/lib/mysql:/var/lib/mysql
   environment:
     - MYSQL_ROOT_PASSWORD=password
   ports:
