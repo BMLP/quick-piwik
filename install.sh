@@ -1,4 +1,7 @@
 echo "Install Starting..."
+apt-get install wget
+apt-get install unzip
+
 mkdir piwik-mysql
 mkdir piwik-www
 
