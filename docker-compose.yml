@@ -1,0 +1,16 @@
+PiwikMysql:
+  image: mysql
+  volumes:
+    - $PWD/PiwikMysql:/var/lib/mysql
+  environment:
+    - MYSQL_ROOT_PASSWORD=password
+  ports:
+    - "3306:3306"
+PiwikNginx:
+  image: million12/nginx-php
+  volumes:
+    - $PWD/PiwikWww:/data/www/default
+  ports:
+    - "80:80"
+  links:
+    - "PiwikMysql:mysql"
