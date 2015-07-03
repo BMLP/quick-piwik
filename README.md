@@ -52,9 +52,9 @@ The piwik installation screens are pretty straight forward. This is where you se
 There are three things to remember in the database setup form:
 
 **Database Server:**
-To find the database server you will need to run this command on the server: 
+To find the database server you will need to first run ```docker ps``` to find the id of your two containers. Then run this command replacing ```[ID]``` with the id of the PiwikNginx container:
 ```
-docker exec 9e8b env | grep PORT_3306_TCP_ADDR | grep -Pom 1 '[0-9.]{7,15}'
+docker exec [ID] env | grep PORT_3306_TCP_ADDR | grep -Pom 1 '[0-9.]{7,15}'
 ```
 **Login:**
 ```
